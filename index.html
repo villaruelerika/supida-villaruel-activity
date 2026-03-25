@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Drama Garden | Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="bg-overlay"></div>
+
+    <nav>
+        <div class="logo">KDrama Garden</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#explore">Archive</a></li>
+            <li><a href="#recommend">Submit</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Ethereal K-Drama Archive</h1>
+        <p>A curated collection of stories featuring magic, nature, and destiny.</p>
+        <a href="#explore" class="btn-main">Explore Dramas</a>
+    </header>
+
+    <section class="content-section" id="explore">
+        <h2 class="section-title">Featured Stories</h2>
+        <div class="grid">
+            
+            <article class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500');"></div>
+                <div class="card-body">
+                    <span class="card-tag">Fantasy • Romance</span>
+                    <h3 class="card-title">Alchemy of Souls</h3>
+                    <p class="card-text">Young mages navigate their twisted fates due to forbidden magic.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=500');"></div>
+                <div class="card-body">
+                    <span class="card-tag">Dark Fantasy</span>
+                    <h3 class="card-title">Hotel Del Luna</h3>
+                    <p class="card-text">A hotel for the dead managed by a moody, cursed soul.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1514372712048-0bb215e72d16?w=500');"></div>
+                <div class="card-body">
+                    <span class="card-tag">Sci-Fi • Fantasy</span>
+                    <h3 class="card-title">The King: Eternal Monarch</h3>
+                    <p class="card-text">An emperor attempts to close a door between parallel worlds.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="form-section" id="recommend">
+        <div class="form-container">
+            <h2>Recommend a Drama</h2>
+            <form id="recommendForm">
+                <div class="form-group">
+                    <label>Drama Title</label>
+                    <input type="text" placeholder="e.g. My Demon" required>
+                </div>
+                <div class="form-group">
+                    <label>Primary Genre</label>
+                    <select>
+                        <option>Fantasy</option>
+                        <option>Romance</option>
+                        <option>Thriller</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-main" style="width:100%">Submit Recommendation</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 K-Drama Garden | Alfred Supida and Erika Villaruel Activity</p>
+    </footer>
+
+</body>
+</html>
