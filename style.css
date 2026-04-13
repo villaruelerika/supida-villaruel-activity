@@ -180,6 +180,53 @@ nav {
     align-items: start;
 }
 
+
+ /* RECOMMENDATION FORM FIX */
+        .form-section {
+            padding: 80px 10%;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--glass);
+            padding: 40px;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            color: var(--sage);
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-group input, 
+        .form-group select {
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus {
+            border-color: var(--sage);
+            background: rgba(0, 0, 0, 0.5);
+        }
 /* Ratings Panel */
 .rating-card {
     background: var(--glass);
