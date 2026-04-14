@@ -21,9 +21,7 @@ body {
     overflow-x: hidden;
 }
 
-
-
-/* 3. Navigation */
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -49,9 +47,7 @@ nav {
     display: flex;
 }
 
-.nav-links li {
-    margin-left: 30px;
-}
+.nav-links li { margin-left: 30px; }
 
 .nav-links a {
     text-decoration: none;
@@ -60,11 +56,9 @@ nav {
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: var(--sage);
-}
+.nav-links a:hover { color: var(--sage); }
 
-/* 4. Hero Section */
+/* Hero Section */
 .hero {
     height: 80vh;
     display: flex;
@@ -90,7 +84,9 @@ nav {
     color: #ccc;
 }
 
+/* Buttons */
 .btn-main {
+    display: inline-block;
     padding: 12px 35px;
     background-color: var(--emerald);
     color: white;
@@ -99,18 +95,18 @@ nav {
     font-weight: bold;
     transition: 0.3s;
     border: 1px solid var(--sage);
+    text-align: center;
 }
 
 .btn-main:hover {
     background-color: var(--sage);
     color: var(--dark-forest);
     transform: scale(1.05);
+    cursor: pointer;
 }
 
-/* 5. Drama Grid Section */
-.content-section {
-    padding: 80px 10%;
-}
+/* Drama Grid Section */
+.content-section { padding: 80px 10%; }
 
 .section-title {
     text-align: center;
@@ -125,7 +121,6 @@ nav {
     gap: 30px;
 }
 
-/* 6. Card Design */
 .card {
     background: var(--glass);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -146,9 +141,7 @@ nav {
     background-position: center;
 }
 
-.card-body {
-    padding: 25px;
-}
+.card-body { padding: 25px; }
 
 .card-tag {
     font-size: 0.7rem;
@@ -157,17 +150,58 @@ nav {
     font-weight: bold;
 }
 
-.card-title {
-    margin: 10px 0;
-    font-size: 1.4rem;
+.card-title { margin: 10px 0; font-size: 1.4rem; }
+
+.card-text { font-size: 0.9rem; color: #ddd; }
+
+/* Recommendation Form Styling */
+.form-section {
+    padding: 80px 10%;
+    background: rgba(0, 0, 0, 0.2);
 }
 
-.card-text {
-    font-size: 0.9rem;
-    color: #ddd;
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--glass);
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
 }
 
-/* 9. Fan Hype & Ratings Styles */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: var(--sage);
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group input, 
+.form-group select {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: var(--sage);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Social Proof Section */
 .social-proof {
     padding: 60px 10%;
     background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4));
@@ -180,7 +214,6 @@ nav {
     align-items: start;
 }
 
-/* Ratings Panel */
 .rating-card {
     background: var(--glass);
     padding: 30px;
@@ -191,10 +224,6 @@ nav {
     margin-bottom: 30px;
 }
 
-.rating-item {
-    text-align: center;
-}
-
 .rating-value {
     display: block;
     font-size: 2.5rem;
@@ -202,34 +231,9 @@ nav {
     color: var(--sage);
 }
 
-.rating-label {
-    font-size: 0.8rem;
-    color: var(--gold);
-    text-transform: uppercase;
-}
+.rating-label { font-size: 0.8rem; color: var(--gold); }
 
-.awards-list h3 {
-    color: var(--sage);
-    margin-bottom: 15px;
-}
-
-.awards-list ul {
-    list-style: "✦ ";
-    padding-left: 20px;
-    color: #ccc;
-}
-
-.awards-list li {
-    margin-bottom: 10px;
-    font-style: italic;
-}
-
-/* Hype/Tweet Panel */
-.tweet-feed {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+.tweet-feed { display: flex; flex-direction: column; gap: 15px; }
 
 .tweet {
     background: rgba(255, 255, 255, 0.03);
@@ -244,124 +248,17 @@ nav {
     transform: translateX(10px);
 }
 
-.tweet-user {
-    font-weight: bold;
-    color: var(--sage);
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-}
-
-.tweet-text {
-    font-size: 0.95rem;
-    color: #eee;
-}
-
-/* Responsive adjustment */
-@media (max-width: 900px) {
-    .proof-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* OST Section Styling */
-.ost-section {
-    padding: 60px 10%;
-    background: rgba(255, 255, 255, 0.03);
-}
-
-.ost-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.ost-track {
-    background: rgba(255, 255, 255, 0.07);
-    padding: 20px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    min-width: 280px;
-    transition: transform 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.ost-track:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.12);
-}
-
-.ost-disc {
-    font-size: 2rem;
-    margin-right: 15px;
-}
-
-.ost-info h4 {
-    margin: 0;
-    color: var(--sage, #b2ac88); /* Using your sage variable or a fallback */
-}
-
-.ost-info p {
-    margin: 5px 0 0;
-    font-size: 0.9rem;
-    color: #ccc;
-}
-
-/* Newsletter Styling */
-.newsletter {
-    padding: 80px 10%;
-    text-align: center;
-    background: linear-gradient(to bottom, transparent, rgba(178, 172, 136, 0.1));
-}
-
-.newsletter-content h3 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.subscribe-box {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.subscribe-box input {
-    flex: 1;
-    padding: 12px 20px;
-    border-radius: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
-    outline: none;
-}
-
-.subscribe-box .btn-main {
-    padding: 12px 30px;
-    cursor: pointer;
-}
-
-/* Smooth Scroll for the whole page */
-html {
-    scroll-behavior: smooth;
-}
-/* 7. Footer */
 footer {
     text-align: center;
     padding: 40px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     font-size: 0.8rem;
     color: #777;
 }
 
-/* 8. Mobile Responsiveness */
-@media (max-width: 768px) {
+/* Responsiveness */
+@media (max-width: 900px) {
+    .proof-container { grid-template-columns: 1fr; }
     .hero h1 { font-size: 2.5rem; }
     .nav-links { display: none; }
 }
