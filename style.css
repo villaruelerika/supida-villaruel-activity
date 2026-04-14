@@ -262,6 +262,94 @@ nav {
         grid-template-columns: 1fr;
     }
 }
+
+/* OST Section Styling */
+.ost-section {
+    padding: 60px 10%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.ost-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.ost-track {
+    background: rgba(255, 255, 255, 0.07);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    min-width: 280px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ost-track:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.ost-disc {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.ost-info h4 {
+    margin: 0;
+    color: var(--sage, #b2ac88); /* Using your sage variable or a fallback */
+}
+
+.ost-info p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Newsletter Styling */
+.newsletter {
+    padding: 80px 10%;
+    text-align: center;
+    background: linear-gradient(to bottom, transparent, rgba(178, 172, 136, 0.1));
+}
+
+.newsletter-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subscribe-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe-box input {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    outline: none;
+}
+
+.subscribe-box .btn-main {
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+/* Smooth Scroll for the whole page */
+html {
+    scroll-behavior: smooth;
+}
 /* 7. Footer */
 footer {
     text-align: center;
